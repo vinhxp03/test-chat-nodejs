@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<script src="jquery.min.js"></script>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="xuly.js"></script>
+</head>
+<body>
+	<div class="wraper" style="width: 100%">
+		<div id="form-login">
+			<input type="text" id="txtUser">
+			<input type="submit" id="btnLogin" value="Vào chat">
+		</div>
+		<div id="form-chat">
+			<div id="left" style="width: 30% ; float: left; height: 100%">
+				<div id="left-title" style="color: red">Online</div>
+				<hr width="50%">
+				<div id="userOnline"></div>
+			</div>
+			<div id="right" style="float: right; width: 70%">
+				<div id="right-title" style="color: red;">
+					Xin chào <span id="curUser"></span>
+					<input type="submit" id="btnLogout" value="Thoát">
+				</div>
+				<hr width="50%">
+				<textarea id="list-message" style="height: 200px; width: 350px" disabled></textarea><br>
+				<input type="text" id="txtmessage">
+				<input type="submit" id="btnSend" value="Chat">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
