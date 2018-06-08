@@ -1,4 +1,4 @@
-var socket = io("http://localhost:3000/");
+var socket = io("https://chat-test-nodejs-vinh.herokuapp.com");
 
 socket.on("server-logon-fail", function (data) {
 	alert("Tên đã tồn tại!!!");
